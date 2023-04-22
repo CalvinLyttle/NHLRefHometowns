@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<title>NHL Officials</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="lib/leaflet.css">
+<script src="lib/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="lib/misc.js"></script>
+</head>
+<body>
+<div id="map"></div>
+<div id="menu">
+	<div id="menu_contents">
+		<h2 class="header">Hometowns of NHL Officials</h2>
+		<div id="options">
+			<div>
+				Locate data: 
+				<select id="locator">
+					<option value=""></option>
+				</select>
+			</div>
+			<div>
+				Filter by refs vs linesmen: 
+				<select id="filter_role">
+					<option value="">All</option>
+					<option value="Referee">Referees</option>
+					<option value="Linesman">Linesmen</option>
+				</select>
+			</div>
+		<div id="caption"></div>
+		<div id="status"></div>
+	</div>
+</div>
+<script src="bundle.js">/* change the src at left to app.js if you are NOT using node.js for this */</script>
+</body>
+</html>
